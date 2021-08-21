@@ -1,9 +1,12 @@
-import './App.css';
+import Theme, { GlobalStyle } from "./assets/Theme";
 
 function App() {
   return (
     <div className="App">
-      hello world
+      <Theme>
+        <GlobalStyle />
+        <h1>hello world</h1>
+      </Theme>
     </div>
   );
 }
