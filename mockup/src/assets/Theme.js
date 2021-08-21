@@ -7,17 +7,18 @@ export const theme = {
     bg: "#FFFFFF",
     text: "#000000",
   },
-  maxWidth: 1440,
+  maxWidth: "87.5rem",
 };
 
 export const GlobalStyle = createGlobalStyle`
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    max-width: ${theme.maxWidth};
+    padding: 0;
+    
     h1 {
-        /* color: TODO: set dynamically */
         font-size: 2.5rem;
         font-weight: 700;
         letter-spacing: calc((25 * 16) / 1000);
