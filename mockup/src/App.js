@@ -1,13 +1,17 @@
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Theme, { GlobalStyle } from "./assets/Theme";
+import Home from "./views/Home";
+import Test from "./views/Test";
 
 const App = () => (
-  <div className="App">
+  <Router>
     <Theme>
       <GlobalStyle />
-      <h1>hello world</h1>
-      <h4>Lorem Ipsum</h4>
+      <Route exact path="/" component={Home} />
+      <Route path="/test" component={Test} />
     </Theme>
-  </div>
+  </Router>
 );
 
 export default App;
