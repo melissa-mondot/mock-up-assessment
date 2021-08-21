@@ -1,5 +1,6 @@
-export { default as Button } from "./Button";
-export { default as Col } from "./Col";
-export { default as Header } from "./Header";
-export { default as Hero } from "./Hero";
-export { default as Row } from "./Row";
+export { default as Button } from "./atoms/Button";
+export { default as Col } from "./atoms/Col";
+export { default as Footer } from "./layout/Footer";
+export { default as Header } from "./layout/Header";
+export { default as Hero } from "./atoms/Hero";
+export { default as Row } from "./atoms/Row";
