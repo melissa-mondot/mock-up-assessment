@@ -15,9 +15,11 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     margin: 0 auto;
-    max-width: ${theme.maxWidth};
     padding: 0;
-    
+    width: 100vw;
+    @media(min-width: 1400px) {
+      width: 1400px;
+    }
     h1 {
         font-size: 2.5rem;
         font-weight: 700;
