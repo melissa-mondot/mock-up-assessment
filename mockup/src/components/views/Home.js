@@ -1,9 +1,10 @@
 import React from "react";
-import { Row } from "../atoms";
+import { Hero, Row } from "../atoms";
 import { Banner, IconCard, ImgCard, InfoCard } from "../molecules";
 
 const Home = () => (
   <>
+  <Hero />
     <Row>
       <InfoCard />
       <ImgCard />
