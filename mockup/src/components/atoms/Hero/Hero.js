@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
 // images
-import heroImg from "../../../assets/imgs/hero.jpg";
-import welcome from "../../../assets/icons/welcome.svg";
+import hero from "../../../assets/imgs/hero.jpg";
+import { welcome } from "../../../assets/icons";
 
 const Hero = () => (
   <StyledHero className="hero">
@@ -24,7 +24,7 @@ const StyledHero = styled.div`
   position: relative;
   text-align: center;
   .background {
-    background: center / cover no-repeat url(${heroImg});
+    background: center / cover no-repeat url(${hero});
     height: 100%;
     margin: 0;
     position: absolute;
@@ -39,7 +39,7 @@ const StyledHero = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
     .welcome-text {
-      display:flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
       h2 {

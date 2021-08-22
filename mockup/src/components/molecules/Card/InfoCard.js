@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Col from "../../atoms/Col";
 
-const ImgCard = ({ ...props }) => (
+const InfoCard = ({ ...props }) => (
   <StyledCard>
-    <div className="card">This is a card</div>
+    <div className="card">This is an info card</div>
   </StyledCard>
 );
 
 const StyledCard = styled(Col)``;
 
-export default ImgCard;
+export default InfoCard;
