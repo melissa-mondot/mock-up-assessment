@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const Row = ({ children }) => (
-  <StyledRow>
-    <div className="row">{children}</div>
-  </StyledRow>
-);
+const Row = ({ children }) => <StyledRow className="row">{children}</StyledRow>;
 
-const StyledRow = styled.div``;
+const StyledRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
 
 export default Row;

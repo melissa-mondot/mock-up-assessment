@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "../Button";
+// images
 import heroImg from "../../../assets/imgs/hero.jpg";
 import welcome from "../../../assets/icons/welcome.svg";
 
@@ -7,8 +9,12 @@ const Hero = () => (
   <StyledHero className="hero">
     <div className="background" />
     <div className="welcome">
-      <img src={welcome} alt="Welcome To written in strikeout" />
-      <h2>Rooster Grin</h2>
+      <div className="welcome-text">
+        <img src={welcome} alt="Welcome To written in strikeout" />
+        <h2>Rooster Grin</h2>
+        {/* TODO: link button to test */}
+        <Button>Button Button</Button>
+      </div>
     </div>
   </StyledHero>
 );
@@ -32,14 +38,16 @@ const StyledHero = styled.div`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    img {
-      height: 5rem;
-    }
-    h2 {
-      color: #ffffff;
-      font-size: 4.33rem;
-      letter-spacing: 0.5rem;
-      margin: 0;
+    .welcome-text {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        color: #ffffff;
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+        margin: auto;
+      }
     }
   }
 `;
