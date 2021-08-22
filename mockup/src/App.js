@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Theme, { GlobalStyle } from "./assets/Theme";
-import { Header, Footer } from "./components";
-import Home from "./components/views/Home";
-import Test from "./components/views/Test";
+import { Header, Footer } from "./components/layout";
+import { Home, Test } from "./components/views";
 
 const App = () => (
   <Router>

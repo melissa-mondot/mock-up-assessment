@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
-    margin: 0;
+    margin: 0 auto;
     max-width: ${theme.maxWidth};
     padding: 0;
     
