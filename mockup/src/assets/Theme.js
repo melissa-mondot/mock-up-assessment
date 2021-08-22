@@ -6,6 +6,10 @@ export const theme = {
     secondary: "#FF7218",
     bg: "#FFFFFF",
     text: "#000000",
+    footerBg: "#FAFAFA"
+  },
+  font: {
+    display: "'Open Sans', sans-serif",
   },
   maxWidth: "87.5rem",
 };
@@ -30,6 +34,9 @@ body {
         font-size: 1.125rem;
         font-weight: 700;
         letter-spacing: calc((55.556 * 16) / 1000);
+    }
+    .home {
+      position: relative;
     }
 }
 `;
