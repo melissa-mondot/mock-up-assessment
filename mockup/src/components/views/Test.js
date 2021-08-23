@@ -1,5 +1,5 @@
 import React from "react";
 
-const Test = () => <div>Test Page with return button</div>;
+const Test = () => <div>Test</div>;
 
 export default Test;

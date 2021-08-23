@@ -1,14 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const InfoCard = ({ title, text, linkText }) => (
   <StyledInfoCard className="info-card">
     <h1>{title}</h1>
     <p>{text}</p>
-    {/* TODO: link to test page */}
-    {/* <a> */}
-    <small>{linkText}</small>
-    {/* </a> */}
+    {/* TODO: link to should be programmatic  */}
+    <NavLink to="/test">
+      <small>{linkText}</small>
+    </NavLink>
+
   </StyledInfoCard>
 );
 

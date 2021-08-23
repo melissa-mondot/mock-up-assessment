@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../../atoms";
 
@@ -9,7 +10,10 @@ const Banner = ({ title, buttonText, image, text, right }) => {
       <div className="banner-info">
         <h4>{title}</h4>
         <p>{text}</p>
-        <Button secondary>{buttonText}</Button>
+        {/* TODO: link to should be programmatic  */}
+        <NavLink to="/test">
+          <Button secondary>{buttonText}</Button>
+        </NavLink>
       </div>
     </StyledBanner>
   );
