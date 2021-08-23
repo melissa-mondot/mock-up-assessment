@@ -3,7 +3,7 @@ import styled from "styled-components";
 // icons
 import { expertise, hygiene, lab, retention } from "../../../assets/icons";
 
-const IconCard = ({ ...props }) => (
+const IconCard = () => (
   <StyledIconCard>
     <div>
       <img src={expertise} alt="expertise" />
@@ -24,8 +24,13 @@ const StyledIconCard = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    transition: all 1s;
     img {
       max-height: 6.1625rem;
+      &:hover {
+        filter: contrast(2);
+        transition: all 1s;
+      }
     }
   }
 `;

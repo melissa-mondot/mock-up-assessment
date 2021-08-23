@@ -10,7 +10,12 @@ const Hero = () => (
     <div className="background" />
     <div className="welcome">
       <div className="welcome-text">
-        <img src={welcome} alt="Welcome To written in strikeout" />
+        {/* TODO: Replace with react-spring */}
+        <img
+          className="animate__animated animate__slideInDown animate__delay-1s"
+          src={welcome}
+          alt="Welcome To written in strikeout"
+        />
         <h2>Rooster Grin</h2>
         {/* TODO: link button to test */}
         <Button>Button Button</Button>
