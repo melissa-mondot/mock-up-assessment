@@ -6,7 +6,7 @@ const Banner = ({ title, buttonText, image, text, right }) => {
   console.log(right);
   return (
     <StyledBanner image={image} right={right}>
-      <div className="banner-info" >
+      <div className="banner-info">
         <h4>{title}</h4>
         <p>{text}</p>
         <Button secondary>{buttonText}</Button>
@@ -29,6 +29,7 @@ const StyledBanner = styled.div`
       white-space: nowrap;
       text-transform: uppercase;
       padding-bottom: 0.25rem;
+      color: ${(props) => props.theme.color.primary};
     }
     h4,
     p {

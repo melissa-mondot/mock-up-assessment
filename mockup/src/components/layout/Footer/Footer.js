@@ -16,7 +16,7 @@ const Footer = () => (
 );
 
 const StyledFooter = styled.footer`
-  background-color: ${(props) => props.theme.color.footerBg};
+  background-color: ${(props) => props.theme.color.altBg};
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -6,7 +6,7 @@ export const theme = {
     secondary: "#FF7218",
     bg: "#FFFFFF",
     text: "#000000",
-    footerBg: "#FAFAFA"
+    altBg: "#FAFAFA"
   },
   font: {
     display: "'Open Sans', sans-serif",
