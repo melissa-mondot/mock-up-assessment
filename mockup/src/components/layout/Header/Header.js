@@ -1,27 +1,18 @@
 import React from "react";
-import styled from "styled-components";
-// images
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+
+// // images
 import logo from "../../../assets/logo/logo-white.svg";
 
-const Header = ({ children }) => (
-  <StyledHeader>
-    <div className="header">
-      <img src={logo} alt="Rooster Grin Media Logo" />
-    </div>
-    {children}
-  </StyledHeader>
+const Header = () => (
+  <Navbar bg="transparent" variant="transparent">
+    <Container>
+      <Navbar.Brand>
+        <img src={logo} alt="" height="30" />
+      </Navbar.Brand>
+    </Container>
+  </Navbar>
 );
-
-const StyledHeader = styled.header`
-  .header {
-    position: absolute;
-    z-index: 10;
-    img {
-      transform: translate(20%, 10%);
-      height: 2.8125rem;
-      width: 15.5625rem;
-    }
-  }
-`;
 
 export default Header;
