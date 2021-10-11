@@ -15,7 +15,7 @@ const Hero = ({ src }) => (
   >
     <Col className="m-auto" xs={10}>
       <h1>Lorem Ipsum Dineth</h1>
-      <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
       <Button>et dolore</Button>
     </Col>
   </Row>
