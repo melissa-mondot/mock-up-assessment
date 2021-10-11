@@ -1,48 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import { Button } from "../../atoms";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+// import { NavLink } from "react-router-dom";
 
-const Banner = ({ title, buttonText, image, text, right }) => {
-  console.log(right);
-  return (
-    <StyledBanner image={image} right={right}>
-      <div className="banner-info">
-        <h4>{title}</h4>
-        <p>{text}</p>
-        {/* TODO: link to should be programmatic  */}
-        <NavLink to="/test">
-          <Button secondary>{buttonText}</Button>
-        </NavLink>
-      </div>
-    </StyledBanner>
-  );
-};
+// TODO: pass in var for button. Hide button unless var is passed in to Banner
 
-const StyledBanner = styled.div`
-  background-image: url(${(props) => props.image});
-  height: 37.5rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  .banner-info {
-    position: absolute;
-    top: 15.125rem;
-    left: ${(props) => (props.right === "true" ? "50rem" : "15.75rem;")};
-    h4 {
-      white-space: nowrap;
-      text-transform: uppercase;
-      padding-bottom: 0.25rem;
-      color: ${(props) => props.theme.color.primary};
-    }
-    h4,
-    p {
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: 0.5rem;
-      max-width: ${(props) => (props.right === "true" ? "60%" : "50%")};
-    }
-  }
-`;
+const Banner = ({ src }) => (
+  <Container>
+    <Image src={src} />
+  </Container>
+);
 
 export default Banner;

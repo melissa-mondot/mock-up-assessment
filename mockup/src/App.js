@@ -6,7 +6,7 @@ import { Home, Test } from "./components/views";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => (
-  <div>
+  <div className="App">
     <Router>
       <Header />
       <Route exact path="/" component={Home} />

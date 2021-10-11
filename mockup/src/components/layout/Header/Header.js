@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../../../assets/logo/logo-white.svg";
 
 const Header = () => (
-  <Navbar bg="transparent" variant="transparent">
+  <Navbar className="position-absolute" bg="transparent" variant="transparent">
     <Container>
       <Navbar.Brand>
         <img src={logo} alt="" height="30" />
