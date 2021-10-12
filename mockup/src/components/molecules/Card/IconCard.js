@@ -14,16 +14,16 @@ const IconCard = () => (
     <Card.Body>
       <Row>
         <Col xs={6}>
-          <Image src={expertise} alt="expertise" fluid />
+          <Image src={expertise} alt="expertise" fluid className="p-4" />
         </Col>
         <Col xs={6}>
-          <Image src={hygiene} alt="hygiene" fluid />
+          <Image src={hygiene} alt="hygiene" fluid className="p-4" />
         </Col>
         <Col xs={6}>
-          <Image src={lab} alt="lab" fluid />
+          <Image src={lab} alt="lab" fluid className="p-4" />
         </Col>
         <Col xs={6}>
-          <Image src={retention} alt="retention" fluid />
+          <Image src={retention} alt="retention" fluid className="p-4" />
         </Col>
       </Row>
     </Card.Body>
