@@ -3,13 +3,13 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
 // // images
-import logo from "../../../assets/logo/logo-white.svg";
 
 const Header = () => (
   <Navbar className="position-absolute" bg="transparent" variant="transparent">
     <Container>
       <Navbar.Brand>
-        <img src={logo} alt="" height="30" />
+        {/* <img src={logo} alt="" height="30" /> */}
+        <h1 className="text-black-50">Company Logo</h1>
       </Navbar.Brand>
     </Container>
   </Navbar>
