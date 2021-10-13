@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <Container className="footer">
-        <div className="business-info d-flex flex-column mt-5 mx-3">
+        <div className="business-info d-flex flex-column mt-4 mx-3">
           <h1>Business Name</h1>
           <p><i><b>Company tagline noted here</b></i></p>
           <address>
