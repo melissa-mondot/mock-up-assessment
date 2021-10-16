@@ -1,18 +1,16 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
 import { NavLink } from "react-router-dom";
 
 const InfoCard = ({ title, text, linkText }) => (
-  <Card className="info-card">
-    <Card.Body>
-      <Card.Title>{title}</Card.Title>
-      <Card.Text>{text}</Card.Text>
-      {/* TODO: link to should be programmatic  */}
-      <NavLink to="/test">
-        <small>{linkText}</small>
-      </NavLink>
-    </Card.Body>
-  </Card>
+  <Col className="info-card m-0 p-3" xs={12}>
+    <h2>{title}</h2>
+    <p>{text}</p>
+    {/* TODO: link to should be programmatic  */}
+    <NavLink to="/test">
+      <small>{linkText}</small>
+    </NavLink>
+  </Col>
 );
 
 export default InfoCard;

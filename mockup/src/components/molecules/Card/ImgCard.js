@@ -1,10 +1,11 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 
 const ImgCard = ({ image, alt }) => (
-  <Card className="img-card">
-    <Card.Img variant="top" src={image} alt={alt} />
-  </Card>
+  <Col className="img-card m-0 p-0" xs={12}>
+    <Image fluid src={image} alt={alt} />
+  </Col>
 );
 
 export default ImgCard;
