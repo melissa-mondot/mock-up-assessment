@@ -7,6 +7,13 @@ import heroImage from "../../assets/imgs/hero.jpg";
 import bannerOne from "../../assets/imgs/banner-1.jpg";
 import bannerTwo from "../../assets/imgs/banner-2.jpg";
 import imageCardOne from "../../assets/imgs/img-1.jpg";
+import { expertise, hygiene, lab, retention } from "../../assets/icons/index";
+const icons = [
+  [expertise, "expertise"],
+  [hygiene, "hygiene"],
+  [lab, "lab"],
+  [retention, "retention"],
+];
 
 const Home = () => (
   <Container className="home w-100">
@@ -31,6 +38,7 @@ const Home = () => (
         "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula."
       }
       linkText={"> Lorem Ipsum"}
+      icons={icons}
     />
     <Banner
       right
