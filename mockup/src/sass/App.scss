@@ -1,3 +1,8 @@
 body {
   max-width: 1024px;
+  .animated-icon {
+    &:hover {
+      animation: bounce 1s ease 0.25s 1 normal none;
+    }
+  }
 }
