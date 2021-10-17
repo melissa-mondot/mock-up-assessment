@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import { Banner, Hero, TextCarousel } from "../molecules";
 import { InfoOne, InfoTwo } from "../organisms";
 // images
@@ -22,7 +21,7 @@ const reviews = [
 ];
 
 const Home = () => (
-  <Container className="home w-100">
+  <div className="home m-0 p-0">
     <Hero src={heroImage} />
     <InfoOne
       title={"Lorem Ipsum"}
@@ -56,7 +55,7 @@ const Home = () => (
       btnTxt={"Uis nisl"}
     />
     <TextCarousel items={reviews} />
-  </Container>
+  </div>
 );
 
 export default Home;

@@ -5,18 +5,17 @@ import Row from "react-bootstrap/Row";
 
 const Hero = ({ src }) => (
   <Row
-    className="hero no-gutters"
+    className="hero m-0"
     style={{
       backgroundImage: `url(${src})`,
       backgroundSize: "cover",
-      minHeight: "260px",
-      color: "white"
+      color: "white",
     }}
   >
-    <Col className="m-auto" xs={10}>
-      <h1>Lorem Ipsum Dineth</h1>
+    <Col className="mx-auto pt-3" xs={10}>
+      <h1 className="mt-5">Lorem Ipsum Dineth</h1>
       <p>Lorem ipsum dolor sit amet consectetur.</p>
-      <Button>et dolore</Button>
+      <Button className="mb-5">et dolore</Button>
     </Col>
   </Row>
 );

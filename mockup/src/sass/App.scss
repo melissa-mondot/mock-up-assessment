@@ -1,11 +1,14 @@
 body {
   max-width: 1024px;
+  margin: auto;
+  padding: 0;
   .animated-icon {
+    max-height: 8rem;
     &:hover {
       animation: bounce 1s ease 0.25s 1 normal none;
     }
   }
-  .text-carousel {
-    height: 200px;
+  .carousel-item {
+    height: 10rem;
   }
 }
