@@ -1,38 +1,23 @@
 import React from "react";
-import styled from "styled-components";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 // icons
-import { expertise, hygiene, lab, retention } from "../../../assets/icons";
 
-const IconCard = () => (
-  <StyledIconCard>
-    <div>
-      <img src={expertise} alt="expertise" />
-      <img src={hygiene} alt="hygiene" />
-      <img src={lab} alt="lab" />
-      <img src={retention} alt="retention" />
-    </div>
-  </StyledIconCard>
-);
+// TODO: subtle animation for icons
 
-const StyledIconCard = styled.div`
-  max-width: 43.75rem;
-  width: 45%;
-  height: 37.5rem;
-  div {
-    padding-top: 8.1125rem;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    transition: all 1s;
-    img {
-      max-height: 6.1625rem;
-      &:hover {
-        filter: contrast(2);
-        transition: all 1s;
-      }
-    }
-  }
-`;
+const IconCard = ({ icons }) => {
+  // console.log(icons);
+  const iconTiles = icons.map((key, icon) => (
+    <Col className="my-3" key={key}>
+      <Image
+        className="animated-icon"
+        src={icons[icon][0]}
+        alt={`Illustration of ${icons[icon][1]}`}
+      />
+    </Col>
+  ));
+  return <Row>{iconTiles}</Row>;
+};
 
 export default IconCard;

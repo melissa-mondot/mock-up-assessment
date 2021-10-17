@@ -1,52 +1,62 @@
 import React from "react";
-import { Hero, Row } from "../atoms";
-import { Banner, IconCard, ImgCard, InfoCard } from "../molecules";
+import Container from "react-bootstrap/Container";
+import { Banner, Hero, TextCarousel } from "../molecules";
+import { InfoOne, InfoTwo } from "../organisms";
 // images
+import heroImage from "../../assets/imgs/hero.jpg";
 import bannerOne from "../../assets/imgs/banner-1.jpg";
 import bannerTwo from "../../assets/imgs/banner-2.jpg";
 import imageCardOne from "../../assets/imgs/img-1.jpg";
+import { expertise, hygiene, lab, retention } from "../../assets/icons/index";
+const icons = [
+  [expertise, "expertise"],
+  [hygiene, "hygiene"],
+  [lab, "lab"],
+  [retention, "retention"],
+];
+const reviews = [
+  ["Neque in odio vel, sit lobortis erat.", "Fugit Quam"],
+  ["Quam in ac quam. Duis et, non arcu imperdiet.", "Fugit Quam"],
+  ["Condimentum non aliquet sed, quisque risus vitae semper.", "Fugit Quam"],
+  ["Lorem ipsum dolor sit amet.", "Fugit Quam"],
+];
 
 const Home = () => (
-  <div className="home">
-    <Hero />
-    <Row>
-      <InfoCard
-        primary
-        title={"Lorem Ipsum"}
-        text={
-          "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula, lacus est vehicula donec. Quam in ac quam. Duis et, non arcu imperdiet sem tellus suspendisse. Condimentum non aliquet sed, quisque risus vitae semper duis feugiat."
-        }
-        linkText={"> Lorem Ipsum"}
-      />
-      <ImgCard image={imageCardOne} alt={"Two people rock climbing, while one helps another up"}/>
-    </Row>
-    <Banner
-      right="false"
-      image={bannerOne}
-      title={"Lorem Ipsum"}
-      buttonText={"Button Button"}
-    />
-    <Row>
-      <InfoCard
-        title={"Lorem ipsum dolor sit amet"}
-        text={
-          "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula."
-        }
-        linkText={"> Lorem Ipsum"}
-      />
-      <IconCard />
-    </Row>
-    <Banner
-      right="true"
-      image={bannerTwo}
+  <Container className="home w-100">
+    <Hero src={heroImage} />
+    <InfoOne
       title={"Lorem Ipsum"}
       text={
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum "
+        "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula, lacus est vehicula donec. Quam in ac quam. Duis et, non arcu imperdiet sem tellus suspendisse. Condimentum non aliquet sed, quisque risus vitae semper duis feugiat."
       }
-      buttonText={"Button Button"}
+      linkText={"> Lorem Ipsum"}
+      image={imageCardOne}
+      alt={"Two people rock climbing, while one helps another up"}
     />
-    <Row>carousel</Row>
-  </div>
+    <Banner
+      src={bannerOne}
+      text={"Duis nisl magna est sociis."}
+      btnTxt={"Sig Almet"}
+    />
+    <InfoTwo
+      title={"Lorem ipsum dolor sit amet"}
+      text={
+        "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula."
+      }
+      linkText={"> Lorem Ipsum"}
+      icons={icons}
+    />
+    <Banner
+      right
+      src={bannerTwo}
+      title={"Odio Vel"}
+      text={
+        "Lectus urna duis convallis convallis tellus id interdum velit laoreet."
+      }
+      btnTxt={"Uis nisl"}
+    />
+    <TextCarousel items={reviews} />
+  </Container>
 );
 
 export default Home;

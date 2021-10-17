@@ -1,30 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 
 const ImgCard = ({ image, alt }) => (
-  <StyledCard image={image}>
-    <div className="img-card">
-      <p>{alt}</p>
-    </div>
-  </StyledCard>
+  <Col className="img-card m-0 p-0" xs={12}>
+    <Image fluid src={image} alt={alt} />
+  </Col>
 );
-
-const StyledCard = styled.div`
-  position: relative;
-  max-width: 43.75rem;
-  width: 50%;
-  height: 32.875rem;
-  div.img-card {
-    background: center / cover no-repeat url(${(props) => props.image});
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    p {
-      transform: translateX(-2000px);
-    }
-  }
-`;
 
 export default ImgCard;

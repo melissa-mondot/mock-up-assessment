@@ -5,3 +5,5 @@ export { default as expertise } from "./home-expertise.svg";
 export { default as hygiene } from "./home-hygiene.svg";
 export { default as lab } from "./home-lab.svg";
 export { default as retention } from "./home-retention.svg";
+export { default as phone } from "./phone.svg";
+export { default as email } from "./envelope.svg";
