@@ -9,15 +9,20 @@ import Col from "react-bootstrap/Col";
 const IconCard = ({ icons }) => {
   // console.log(icons);
   const iconTiles = icons.map((key, icon) => (
-    <Col className="my-3" key={key}>
-      <Image
-        className="animated-icon"
-        src={icons[icon][0]}
-        alt={`Illustration of ${icons[icon][1]}`}
-      />
-    </Col>
+    <Image
+      key={key}
+      className="animated-icon"
+      src={icons[icon][0]}
+      alt={`Icon of ${icons[icon][1]}`}
+    />
   ));
-  return <Row>{iconTiles}</Row>;
+  return (
+    <Col className="icon-card m-0 p-0">
+      <Row className="gx-0 p-3" xs={2}>
+        {iconTiles}
+      </Row>
+    </Col>
+  );
 };
 
 export default IconCard;
