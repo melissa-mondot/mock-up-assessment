@@ -4,3 +4,6 @@ body {
 body .animated-icon:hover {
   animation: bounce 1s ease 0.25s 1 normal none;
 }
+body .text-carousel {
+  height: 200px;
+}

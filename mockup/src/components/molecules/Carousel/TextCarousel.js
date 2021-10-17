@@ -12,12 +12,12 @@ const TextCarousel = ({ items }) => {
     </Carousel.Item>
   ));
   return (
-    <>
+    <div className="text-carousel">
       <h4 className="pt-3">What some of our clients are saying:</h4>
-      <Carousel className="text-carousel my-3 px-2" variant="dark">
+      <Carousel className=" my-3 px-2" variant="dark">
         {slides}
       </Carousel>
-    </>
+    </div>
   );
 };
 
