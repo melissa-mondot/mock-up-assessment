@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 // TODO: subtle animation for icons
 
 const IconCard = ({ icons }) => {
-  console.log(icons);
+  // console.log(icons);
   const iconTiles = icons.map((key, icon) => (
     <Col className="my-3" key={key}>
       <Image

@@ -29,7 +29,7 @@ const Footer = () => {
             <Image className="my-1" src={instagram} alt="Instagram logo" />
             <Image className="my-1" src={facebook} alt="Facebook logo" />
           </div>
-          <div className="mt-4 mb-2 p-1"><small>Company Name, All Rights Reserved {currDate.getFullYear()}</small></div>
+          <div className="mt-4 p-1"><small>Company Name, All Rights Reserved {currDate.getFullYear()}</small></div>
         </div>
       </Container>
     </>

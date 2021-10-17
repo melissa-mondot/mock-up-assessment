@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import { Banner, Hero } from "../molecules";
+import { Banner, Hero, TextCarousel } from "../molecules";
 import { InfoOne, InfoTwo } from "../organisms";
 // images
 import heroImage from "../../assets/imgs/hero.jpg";
@@ -13,6 +13,12 @@ const icons = [
   [hygiene, "hygiene"],
   [lab, "lab"],
   [retention, "retention"],
+];
+const reviews = [
+  ["Neque in odio vel, sit lobortis erat.", "Fugit Quam"],
+  ["Quam in ac quam. Duis et, non arcu imperdiet.", "Fugit Quam"],
+  ["Condimentum non aliquet sed, quisque risus vitae semper.", "Fugit Quam"],
+  ["Lorem ipsum dolor sit amet.", "Fugit Quam"],
 ];
 
 const Home = () => (
@@ -49,6 +55,7 @@ const Home = () => (
       }
       btnTxt={"Uis nisl"}
     />
+    <TextCarousel items={reviews} />
   </Container>
 );
 
