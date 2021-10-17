@@ -4,8 +4,7 @@
 
     - React
     - React Router
-    - Sass
-    - Styled Components / Theming
+    - Dart-Sass
+    - React-Bootstrap
     - Webfont Loader
-    - React Carousel Minimal (TODO: implement carousel)
-    - React Spring (Animate.css used currently)
+    - Pure CSS animations
